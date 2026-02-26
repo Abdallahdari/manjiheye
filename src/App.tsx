@@ -398,8 +398,7 @@ export default function App() {
                 <span className="text-xl font-serif font-bold tracking-tight text-brand-primary">Maanjiheeye</span>
               </div>
               <p className="text-gray-500 max-w-sm">
-                Maanjiheeye is operated by spunout CLG. Registered Charity Number: 20057923. Funded by the Health Service Executive.
-              </p>
+Maanjiheeye waa fikrad ay keeneen dhallinyaro u heellan wax ka qabashada caqabadaha sii kordhaya ee caafimaadka maskaxda ee soo wajaha bulshadeenna.              </p>
             </div>
             
             <div>
