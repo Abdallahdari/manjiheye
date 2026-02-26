@@ -18,19 +18,19 @@ import {
 const testimonials = [
   {
     text: "Salaan, waxaan rabaa inaan idiinka mahadceliyo wax walba oo aad ii sameyseen. Aad bay macno weyn ii lahayd maadaama aan dareemayay murugo iyo kelinimo, waxaadna isiiseen xiriirro iyo waxyaabo kale oo iga caawiyay dareenkaas.",
-    author: "Ayaan Xasan"
+    // author: "Ayaan Xasan"
   },
   {
     text: "Waa sheeko gaaban oo kooban, balse waxay ahayd daqiiqad aanan kelinimo dareemayn, daqiiqad uu qof rabay inuu ogaado sida aan ahay. Aad ayaan idiinku mahadcelinayaa taas.",
-    author: "Cabdiraxmaan Cali"
+    // author: "Cabdiraxmaan Cali"
   },
   {
     text: "Mahadsanidiin badan mutadawicii iga jawaabay fariintayda 5tii subaxnimo markii aan dareemayay walwal iyo walaac badan... Waxay ahayd mid dejin badan oo waxay u ekeyd sidii inaan la hadlayay saaxiibkayga ugu dhow.",
-    author: "Hodan Maxamed"
+    // author: "Hodan Maxamed"
   },
   {
     text: "Waxaan diray fariin anigoo murugo leh oo ilmeynaya, balse waan ka baxay wada hadalka anigoo dareemaya awood, xoog, iyo farxad wejigayga ka muuqata. Aad iyo aad baad u mahadsan tihiin.",
-    author: "Yuusuf Cabdi"
+    // author: "Yuusuf Cabdi"
   },
   {
     text: "Waan ka mahadcelinayaa caawimada. Way koobnayd, balse waan murugaysnaa oo waan ooyayay, anigoo dareemaya jahawareer. Ma helin cid noloshayda ka mid ah oo aan la xiriiro, waxaana u baahnaa wax iga caawiya inaan is dejiyo.",
