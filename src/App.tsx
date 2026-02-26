@@ -39,7 +39,7 @@ const testimonials = [
 ];
 
 const issues = [
-  "Anxiety", "Abuse", "Alcohol Misuse", "Bullying", "Depression", 
+  "Anxiety", "Abuse", "Alcohol Misuse", "Bullying", "Depression", "Trauma ",
   "Drug misuse", "Grief", "Loneliness", "Panic attacks", 
   "Relationship problems", "Sadness", "Self-harm", "Stress", "Suicidal thoughts"
 ];
@@ -141,20 +141,20 @@ export default function App() {
                 transition={{ duration: 0.6 }}
               >
                 <span className="inline-block px-4 py-1.5 rounded-full bg-brand-accent text-brand-primary text-xs font-bold uppercase tracking-wider mb-6">
-                  Free • Anonymous • 24/7
+                Anonymous • 24/7
                 </span>
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] mb-8 text-balance">
                   If it matters to you, <br />
                   <span className="italic text-brand-primary">it matters to us.</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
-                  Maanjiheeye is a free, anonymous, 24/7 messaging service providing everything from a calming chat to immediate support.
+                  Maanjiheeye is , anonymous, 24/7 messaging service providing everything from a calming chat to immediate support.
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center jsustify-center gap-4">
+                <div className="flex w-full  items-center  justify-center gap-4">
                  
                   <a 
-                    href="https://wa.me/+353 87 034 2498?text=HELLO" 
+                    href="https://wa.me/+353870342498?text=HELLO" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto bg-white border-2 border-brand-primary/10 text-brand-primary px-8 py-4 rounded-2xl text-lg font-bold flex items-center justify-center gap-3 hover:bg-brand-accent/30 transition-all active:scale-95"
@@ -164,9 +164,9 @@ export default function App() {
                   </a>
                 </div>
                 
-                <p className="mt-6 text-sm text-gray-500 italic">
+                {/* <p className="mt-6 text-sm text-gray-500 italic">
                   *Free on all major networks. Funded by the HSE.
-                </p>
+                </p> */}
               </motion.div>
             </div>
           </section>
@@ -216,10 +216,12 @@ export default function App() {
                   <div className="w-12 h-12 bg-brand-accent rounded-2xl flex items-center justify-center">
                     <Heart className="text-brand-primary w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-serif font-bold">Always Free</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Completely free on all major networks. Funded by the HSE and donations to ensure everyone can get support.
-                  </p>
+                 <h3 className="text-2xl font-serif font-bold">
+  Accessible Support
+</h3>
+<p className="text-gray-600 leading-relaxed">
+  This service is not free. Standard messaging or network rates may apply depending on your mobile provider. Please check with your network for details on any applicable charges.
+</p>
                 </motion.div>
               </div>
             </div>
@@ -238,8 +240,8 @@ export default function App() {
                   </p>
                   <div className="space-y-4">
                     {[
-                      "Text HELLO to +353870342498 to begin",
-                      "Get connected with a trained volunteer",
+                      "Text Maanjiheeye to begin",
+                      "Get connected with a trained volunteer within minutes",
                       "Share what's on your mind at your own pace",
                       "Work together to reach a calm, safe place"
                     ].map((step, i) => (
@@ -403,26 +405,46 @@ export default function App() {
             <div>
               <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-gray-400">Quick Links</h4>
               <ul className="space-y-4 text-sm font-medium">
-                <li><button onClick={() => navigateTo('home')} className="hover:text-brand-primary transition-colors">Home</button></li>
-                <li><button onClick={() => navigateTo('about')} className="hover:text-brand-primary transition-colors">About</button></li>
+                <li><button onClick={() => navigateTo('home')} className="hover:text-brand-primary cursor-pointer transition-colors">Home</button></li>
+                <li><button onClick={() => navigateTo('about')} className="hover:text-brand-primary cursor-pointer transition-colors">About</button></li>
                 <li><a href="#how-it-works" className="hover:text-brand-primary transition-colors">How it works</a></li>
                 <li><a href="#testimonials" className="hover:text-brand-primary transition-colors">Testimonials</a></li>
               </ul>
             </div>
 
-            <div>
-              <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-gray-400">Contact</h4>
-              <ul className="space-y-4 text-sm font-medium">
-                <li className="flex items-center gap-2">
-                  <Phone size={16} className="text-brand-primary" />
-                  <span>Text HELLO to +353 87 034 2498</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MessageSquare size={16} className="text-brand-primary" />
-                  <span>WhatsApp: +353 87 034 2498</span>
-                </li>
-              </ul>
-            </div>
+           <div>
+  <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-gray-400">
+    Contact
+  </h4>
+
+  <ul className="space-y-4 text-sm font-medium">
+    
+    <li>
+      <a
+        href="https://wa.me/353870342498?text=HELLO"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 hover:text-brand-primary transition-colors"
+      >
+        <Phone size={16} className="text-brand-primary" />
+        <span>Text Now</span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://wa.me/353870342498"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 hover:text-brand-primary transition-colors"
+      >
+        <MessageSquare size={16} className="text-brand-primary" />
+        <span>Contact Us</span>
+      </a>
+    </li>
+
+  </ul>
+</div>
           </div>
           
           <div className="pt-10 border-t border-brand-primary/5 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-400">
@@ -467,14 +489,14 @@ function AboutPage() {
             <h2 className="text-3xl font-serif font-bold text-gray-900">
               Hadafkeenna
             </h2>
-            <p className="leading-relaxed">
-              Maanjiheeye waa adeeg fariin qoraal ah oo bilaash ah, qarsoodi ah, 
-              kana shaqeeya 24 saac maalintii, 7 maalmood usbuucii gudaha Soomaaliya. 
-              Waxaan bixinnaa wax kasta laga bilaabo wada sheekeysi dejin ah ilaa 
-              taageero degdeg ah qof kasta oo u baahan. Hadafkeenna waa inaan hubinno 
-              in qofna uusan keligiis wajahin caqabadihiisa, annagoo siinayna meel 
-              ammaan ah oo aan lagu xukumin wakhti kasta oo maalinta ama habeenka ah.
-            </p>
+           <p className="leading-relaxed">
+  Maanjiheeye waa adeeg fariin qoraal ah oo qarsoodi ah, 
+  kana shaqeeya 24 saac maalintii, 7 maalmood usbuucii gudaha Soomaaliya. 
+  Waxaan bixinnaa wax kasta laga bilaabo wada sheekeysi dejin ah ilaa 
+  taageero degdeg ah qof kasta oo u baahan. Hadafkeenna waa inaan hubinno 
+  in qofna uusan keligiis wajahin caqabadihiisa, annagoo siinayna meel 
+  ammaan ah oo aan lagu xukumin wakhti kasta oo maalinta ama habeenka ah.
+</p>
           </section>
 
           <div className="grid md:grid-cols-2 gap-8 my-12">
@@ -497,10 +519,10 @@ function AboutPage() {
                 Waxaa Taageera Bulshada
               </h3>
               <p className="text-sm">
-                Adeeggeenna waxaa taageera deeqo iyo tabarucaad ka yimaada 
-                bulshada iyo hay’ado gudaha Soomaaliya ah, si loo hubiyo 
-                in taageeradu mar walba ahaato mid bilaash ah qof walba.
-              </p>
+  Adeeggeenna waxaa taageera deeqo iyo tabarucaad ka yimaada 
+  bulshada iyo hay’ado gudaha Soomaaliya ah, si loo hubiyo 
+  in taageeradu mar walba ahaato mid la heli karo qof walba.
+</p>
             </div>
 
           </div>
@@ -526,10 +548,10 @@ function AboutPage() {
             <h2 className="text-3xl font-serif font-bold">
               Ma rabtaa inaad la hadasho qof?
             </h2>
-            <p className="text-brand-accent/80 max-w-md mx-auto">
-              Mutadawiciinteennu waa diyaar. Adeeggu waa bilaash, 
-              qarsoodi ah, waana la heli karaa hadda.
-            </p>
+        <p className="text-brand-accent/80 max-w-md mx-auto">
+  Mutadawiciinteennu waa diyaar. Adeeggu waa qarsoodi ah, 
+  waana la heli karaa hadda.
+</p>
             <a 
               href="https://wa.me/+353870342498?text=Salaan" 
               target="_blank"
