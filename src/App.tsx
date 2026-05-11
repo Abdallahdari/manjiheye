@@ -281,19 +281,26 @@ export default function App() {
           </section>
 
           {/* Testimonials */}
-          <section id="testimonials" className="py-24 bg-brand-primary text-white overflow-hidden relative">
-            <div className="absolute top-0 right-0 p-12 opacity-10">
-              <Quote size={200} />
-            </div>
-            
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">What people say</h2>
-                <p className="text-brand-accent/80">Real stories from people who reached out.</p>
-              </div>
+         {/* Testimonials */}
+<section
+  id="testimonials"
+  className="py-24 bg-brand-primary text-white overflow-hidden relative"
+>
+  <div className="absolute top-0 right-0 p-12 opacity-10">
+    <Quote size={200} />
+  </div>
 
-             
-          </section>
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+        What people say
+      </h2>
+      <p className="text-brand-accent/80">
+        Real stories from people who reached out.
+      </p>
+    </div>
+  </div>
+</section>
 
           {/* Volunteer Section */}
           {/* <section id="volunteer" className="py-24 bg-white">
