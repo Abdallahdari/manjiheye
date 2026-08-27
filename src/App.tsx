@@ -304,47 +304,7 @@ export default function App() {
 
           {/* Volunteer Section */}
           {/* <section id="volunteer" className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-6">
-              <div className="bg-brand-accent/30 rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row items-center gap-12">
-                <div className="flex-1 space-y-6">
-                  <div className="w-12 h-12 bg-brand-primary rounded-2xl flex items-center justify-center">
-                    <Users className="text-white w-6 h-6" />
-                  </div>
-                  <h2 className="text-4xl font-serif font-bold">Become a Volunteer</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Our trained volunteers interact with texters through our secure online platform. Help people sort through their feelings and reach a safe place.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-center gap-3">
-                      <CheckCircle2 className="text-brand-primary w-5 h-5" />
-                      <span className="font-medium">Full training provided</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <CheckCircle2 className="text-brand-primary w-5 h-5" />
-                      <span className="font-medium">Work from your own laptop</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <CheckCircle2 className="text-brand-primary w-5 h-5" />
-                      <span className="font-medium">Secure & anonymous platform</span>
-                    </li>
-                  </ul>
-                  <button className="bg-brand-primary text-white px-8 py-4 rounded-2xl font-bold hover:bg-opacity-90 transition-all shadow-lg active:scale-95">
-                    Apply to Volunteer
-                  </button>
-                </div>
-                <div className="flex-1">
-                  <img 
-                    // src="https://picsum.photos/seed/volunteer/800/600" 
-
-                                        src="../src/volon.jpg" 
-
-                    alt="Volunteer working" 
-                    className="rounded-3xl shadow-2xl"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-              </div>
-            </div>
+            
           </section> */}
         </>
       ) : (
